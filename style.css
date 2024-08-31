@@ -1,0 +1,130 @@
+
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 72vh;
+  gap: 35px;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 300px;
+  height: 300px;
+  border: 5px solid transparent;
+  border-radius: 10px;
+}
+
+.game-btn {
+  background-color: #fff;
+  border: none;
+  font-size: 2em;
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 200ms;
+  color: #000;
+}
+
+.game-btn:hover {
+  background-color: #555 !important;
+  color: #fff;
+}
+
+.game-btn:focus {
+  outline: none;
+}
+
+.game-btn:disabled {
+  background-color: #fff;
+  cursor: not-allowed;
+}
+
+#reset-btn {
+  background-color: #fff;
+  border: none;
+  font-size: 1.5em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 200ms;
+  color: #000;
+  margin-top: 20px;
+}
+
+#reset-btn:hover {
+  background-color: #555;
+  color: #fff;
+}
+#reset-btn:active {
+  transform: scale(0.9);
+}
+
+/* winner section */
+
+.winner-container {
+  background-color: #111;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 2em;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.winner-text {
+  color: #fff;
+  text-align: center;
+}
+
+
+#again-btn {
+  background-color: #222;
+  color: #fff;
+  font-size: 2em;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 200ms;
+  margin: auto;
+  width: 30%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+#again-btn:hover {
+  background-color: #555;
+}
+
+#again-btn:active {
+  transform: scale(0.9);
+}
+
